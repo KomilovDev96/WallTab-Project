@@ -1,0 +1,5 @@
+export * from './AboutPage'
+export * from './HomePage'
+export * from './ContactPage'
+export * from './BlogPage'
+export * from './CatalogPage'

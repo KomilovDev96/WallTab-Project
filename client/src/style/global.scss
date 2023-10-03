@@ -1,6 +1,63 @@
 @import url('/public/fonts/style.scss');
+@import "./reset.scss";
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
 body {
     font-family: 'Montserrat';
 }
+
+p {
+    color: var(--text-grey);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 30px */
+    letter-spacing: 0.2px;
+}
+
+h1 {
+    color: var(--black);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+h2 {
+
+    color: #000;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 136%;
+    /* 54.4px */
+}
+
+h3 {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 177.9%;
+    /* 40.917px */
+    letter-spacing: 0.23px;
+}
+
+h4 {
+    color: var(--black);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+

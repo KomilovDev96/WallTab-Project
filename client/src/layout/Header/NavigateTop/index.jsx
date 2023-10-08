@@ -69,30 +69,32 @@ const NavigateTop = () => {
                 </div>
                 <div className='mainMenu_bottom'>
                     <Container>
-                        <Row>
-                            <Col lg="6">
-                                <ul>
-                                    {NavigateBottomMENUDATA.map((item, index) => (
-                                        <li key={index}>
-                                            <a href={item.href}>
-                                                {item.title}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </Col>
-                            <Col lg="6">
-                                <ul>
-                                    {NavigateBottomOFERDATA.map((item, index) => (
-                                        <li key={index}>
-                                            <a href={item.href}>
-                                                {item.title}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </Col>
-                        </Row>
+                        <div className='mainMenu_bottom_border'>
+                            <Row>
+                                <Col lg="6">
+                                    <ul className='mainMenu_bottom_menu'>
+                                        {NavigateBottomMENUDATA.map((item, index) => (
+                                            <li key={index}>
+                                                <a href={item.href}>
+                                                    {item.title}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </Col>
+                                <Col lg="6">
+                                    <ul className='mainMenu_bottom_menu mainMenu_bottom_menu-left'>
+                                        {NavigateBottomOFERDATA.map((item, index) => (
+                                            <li key={index}>
+                                                <a href={item.href}>
+                                                    {item.title}
+                                                </a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </Col>
+                            </Row>
+                        </div>
                     </Container>
                     <ul>
 

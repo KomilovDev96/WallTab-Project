@@ -47,7 +47,7 @@
 }
 
 .mainMenu {
-    padding: 20px 0 70px;
+    padding: 20px 0 0px;
 
     &_flex {
         display: flex;
@@ -100,7 +100,7 @@
         display: flex;
         width: 100%;
 
-      
+
 
         &_title {
             color: var(--black, #1F1F1F);
@@ -119,25 +119,76 @@
             justify-content: flex-end;
             display: flex;
             align-items: center;
-            li{
+
+            li {
                 margin-left: 20px;
                 border-left: 1px solid black;
                 padding-left: 10px;
-                &:first-child{
+
+                &:first-child {
                     border-left: none;
                 }
-                a{
+
+                a {
                     display: flex;
                     align-items: center;
-                    svg{
+
+                    svg {
                         fill: black;
                     }
-                    &:hover{
+
+                    &:hover {
                         text-decoration: underline;
                     }
                 }
             }
 
+        }
+    }
+
+    &_top {
+        padding-bottom: 20px;
+    }
+
+    &_bottom {
+        &_border {
+            padding: 27px 0;
+            border-top: 1px solid var(--grey);
+        }
+
+        &_menu {
+            display: flex;
+            align-items: center;
+
+            li {
+                border-left: 1px solid var(--grey);
+                padding: 0 25px;
+
+                &:first-child {
+                    border-left: none;
+                    padding-left: 0;
+                }
+
+                a {
+                    color: var(--black, #1F1F1F);
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: capitalize;
+                }
+            }
+
+            &-left {
+                justify-content: flex-end;
+
+                li {
+                    padding: 0 25px;
+
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
         }
     }
 }

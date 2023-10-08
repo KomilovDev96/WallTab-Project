@@ -1,0 +1,26 @@
+.sliderItem {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &_title {
+        margin-bottom: 10px;
+    }
+
+    &_text {
+        margin-bottom: 75px;
+    }
+
+    &_left {
+        max-width: 650px;
+    }
+
+    &_right {
+        max-width: 703px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

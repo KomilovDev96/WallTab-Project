@@ -15,10 +15,10 @@ export const NavigateBottomSVGDATA = [
 
 export const NavigateBottomMENUDATA = [
     { id: 1, title: "Главная", href: '/' },
-    { id: 2, title: "О нас", href: '/' },
-    { id: 3, title: "Блог", href: '/' },
-    { id: 4, title: "Контакти", href: '/' },
-    { id: 5, title: "Каталог", href: '/' },
+    { id: 2, title: "О нас", href: '/about' },
+    { id: 3, title: "Блог", href: '/blog' },
+    { id: 4, title: "Контакти", href: '/contact' },
+    { id: 5, title: "Каталог", href: '/catalog' },
 ]
 
 export const NavigateBottomOFERDATA = [

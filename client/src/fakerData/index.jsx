@@ -1,7 +1,7 @@
 import { AiOutlineInstagram, AiFillFacebook, AiFillTwitterCircle } from "react-icons/ai";
 import { BsTelegram, BsFillPersonFill } from "react-icons/bs";
 import HeaderBG from '../assets/png/header.png'
-import { FaneraIcon1 } from "../assets";
+import { CategBlock1PNG, CategBlock2PNG, FaneraIcon1 } from "../assets";
 export const NavigateTopDATA = [
     { id: 1, svg: <BsTelegram />, href: '/' },
     { id: 2, svg: <AiOutlineInstagram />, href: '/' },
@@ -15,7 +15,7 @@ export const NavigateBottomSVGDATA = [
 ]
 
 export const NavigateBottomMENUDATA = [
-    { id: 1, title: "Главная", href: '/', current: true},
+    { id: 1, title: "Главная", href: '/', current: true },
     { id: 2, title: "О нас", href: '/about', current: false },
     { id: 3, title: "Блог", href: '/blog', current: false },
     { id: 4, title: "Контакти", href: '/contact', current: false },
@@ -41,4 +41,13 @@ export const FaneraItemDATA = [
     { id: 2, title: "Персонализация", text: "Обратным процессом персонализации выступает деперсонализация, которая представляет собой нарушения самосознания", svg: FaneraIcon1 },
     { id: 3, title: "Персонализация", text: "Обратным процессом персонализации выступает деперсонализация, которая представляет собой нарушения самосознания", svg: FaneraIcon1, top: "fanerItemActive" },
     { id: 4, title: "Персонализация", text: "Обратным процессом персонализации выступает деперсонализация, которая представляет собой нарушения самосознания", svg: FaneraIcon1, top: "fanerItemActive" },
+]
+
+export const CategoryDATA = [
+    { id: 1, title: "Однослойные карты", active: false, image: CategBlock1PNG },
+    { id: 2, title: "Многослойные карты", active: false, image: CategBlock2PNG },
+    { id: 3, title: "Однослойные карты", active: false, image: CategBlock1PNG },
+    { id: 4, title: "Однослойные карты", active: false, image: CategBlock1PNG },
+    { id: 5, title: "Однослойные карты", active: false, image: CategBlock2PNG },
+    { id: 6, title: "Однослойные карты", active: false, image: CategBlock1PNG },
 ]

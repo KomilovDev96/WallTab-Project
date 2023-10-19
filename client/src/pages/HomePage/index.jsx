@@ -2,12 +2,12 @@ import { TagsElement } from "../../components"
 import { Col, Container, Row } from 'styled-bootstrap-grid'
 import FaneraItem from "./components/FaneraItem"
 import EnterCompony from "./components/EnterCompony"
-import { FaneraItemDATA } from "../../fakerData"
+import { CategoryDATA, FaneraItemDATA } from "../../fakerData"
 import "./style.scss"
 export const HomePage = () => {
     return (
         <div className="homepage">
-            <div className="fanera">
+            <div className="homepage_fanera fanera">
                 <Container>
                     <div className="fanera_top">
                         <TagsElement tag="h2">
@@ -18,7 +18,6 @@ export const HomePage = () => {
                         </TagsElement>
                     </div>
                     <Row>
-
                         {FaneraItemDATA.map((item, index) => (
                             <Col lg="3" key={index} >
                                 <FaneraItem item={item} />
@@ -28,9 +27,7 @@ export const HomePage = () => {
                 </Container>
             </div>
             <div className="entercompont">
-                <Container>
-                    <EnterCompony />
-                </Container>
+                <EnterCompony data={CategoryDATA} />
             </div>
         </div>
     )

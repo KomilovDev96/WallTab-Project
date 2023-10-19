@@ -1,0 +1,111 @@
+.topcompony {
+    background: linear-gradient(79deg, rgba(111, 58, 27, 0.07) -2.75%, rgba(255, 255, 255, 0.00) 101.74%);
+
+    &_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 20px;
+
+        h2 {
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin-bottom: 50px;
+        }
+    }
+
+    &_formFlex {
+        display: flex;
+        justify-content: space-between;
+        background: white;
+        padding-left: 20px;
+        border-radius: 10px;
+
+        input {
+            display: inline-block;
+            border: none;
+            width: 266px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.ozcategory {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 606px 1fr;
+    gap: 37px 44px;
+
+    &_item {
+        position: relative;
+        cursor: pointer;
+        border-radius: 11px;
+
+        &:hover {
+            .ozcategory_title {
+                height: 100px;
+
+                svg {
+                    transform: translateX(10px) rotate(90deg);
+                }
+            }
+        }
+
+    }
+
+    &_title {
+        position: absolute;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 500ms all;
+        border-radius: 11px;
+        svg {
+            transition: 500ms all;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.56);
+            border-radius: 11px;
+            z-index: 2;
+        }
+
+        h4 {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding: 22px 0;
+            z-index: 5;
+        }
+    }
+
+    &_image {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 11px;
+        }
+    }
+}

@@ -8,6 +8,9 @@ import HeaderPNG from './png/header.png'
 import Intercompony from './png/intercompony.png'
 import CategBlock1PNG from './png/Gig Image 1.png'
 import CategBlock2PNG from './png/Gig Image 2.png'
+import ClientMapPNG from './png/Rectangle 21.png'
+import AvatarMapPNG from './png/Ellipse 7.png'
+import GroupMapPNG from './png/Group 932.png'
 
 export {
     LogoSVG,
@@ -15,5 +18,8 @@ export {
     FaneraIcon1,
     Intercompony,
     CategBlock1PNG,
-    CategBlock2PNG
+    CategBlock2PNG,
+    ClientMapPNG,
+    AvatarMapPNG,
+    GroupMapPNG
 }

@@ -1,7 +1,7 @@
 import { AiOutlineInstagram, AiFillFacebook, AiFillTwitterCircle } from "react-icons/ai";
 import { BsTelegram, BsFillPersonFill } from "react-icons/bs";
 import HeaderBG from '../assets/png/header.png'
-import { CategBlock1PNG, CategBlock2PNG, FaneraIcon1 } from "../assets";
+import { AvatarMapPNG, CategBlock1PNG, CategBlock2PNG, ClientMapPNG, FaneraIcon1, GroupMapPNG } from "../assets";
 export const NavigateTopDATA = [
     { id: 1, svg: <BsTelegram />, href: '/' },
     { id: 2, svg: <AiOutlineInstagram />, href: '/' },
@@ -50,4 +50,19 @@ export const CategoryDATA = [
     { id: 4, title: "Однослойные карты", active: false, image: CategBlock1PNG },
     { id: 5, title: "Однослойные карты", active: false, image: CategBlock2PNG },
     { id: 6, title: "Однослойные карты", active: false, image: CategBlock1PNG },
+]
+
+export const ClientDATA = [
+    { id: 1, img: ClientMapPNG, title: "Однослойная карта", text: "Сделан из прочных древесин и от качественных мастеров", avatar: "Андрей", avatarImage: AvatarMapPNG, date: "20.12.2020" },
+    { id: 2, img: ClientMapPNG, title: "Однослойная карта", text: "Сделан из прочных древесин и от качественных мастеров", avatar: "Андрей", avatarImage: AvatarMapPNG, date: "20.12.2020" },
+    { id: 3, img: ClientMapPNG, title: "Однослойная карта", text: "Сделан из прочных древесин и от качественных мастеров", avatar: "Андрей", avatarImage: AvatarMapPNG, date: "20.12.2020" },
+    { id: 4, img: ClientMapPNG, title: "Однослойная карта", text: "Сделан из прочных древесин и от качественных мастеров", avatar: "Андрей", avatarImage: AvatarMapPNG, date: "20.12.2020" },
+
+]
+
+export const KartaDATA = [
+    { id: 1, titleM: "Хит продаж", title: "Многослойная карта", img: GroupMapPNG, text: "Многослойная карта мира будет отличным подарком на день рождения родных, годовщину родственников, новоселье друзей. Изысканное дополнение декора абсолютно любого помещения. Рельефная деревянная карта мира будет привлекать внимание всех своим стилем и качеством обработки" },
+    { id: 2, titleM: "Хит продаж", title: "Многослойная карта", img: GroupMapPNG, text: "Многослойная карта мира будет отличным подарком на день рождения родных, годовщину родственников, новоселье друзей. Изысканное дополнение декора абсолютно любого помещения. Рельефная деревянная карта мира будет привлекать внимание всех своим стилем и качеством обработки" },
+    { id: 3, titleM: "Хит продаж", title: "Многослойная карта", img: GroupMapPNG, text: "Многослойная карта мира будет отличным подарком на день рождения родных, годовщину родственников, новоселье друзей. Изысканное дополнение декора абсолютно любого помещения. Рельефная деревянная карта мира будет привлекать внимание всех своим стилем и качеством обработки" },
+    { id: 5, titleM: "Хит продаж", title: "Многослойная карта", img: GroupMapPNG, text: "Многослойная карта мира будет отличным подарком на день рождения родных, годовщину родственников, новоселье друзей. Изысканное дополнение декора абсолютно любого помещения. Рельефная деревянная карта мира будет привлекать внимание всех своим стилем и качеством обработки" }
 ]

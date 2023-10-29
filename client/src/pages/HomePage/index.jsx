@@ -4,6 +4,7 @@ import FaneraItem from "./components/FaneraItem"
 import EnterCompony from "./components/EnterCompony"
 import { CategoryDATA, FaneraItemDATA } from "../../fakerData"
 import "./style.scss"
+import WeclientHomePage from "./components/WeClient"
 export const HomePage = () => {
     return (
         <div className="homepage">
@@ -28,6 +29,12 @@ export const HomePage = () => {
             </div>
             <div className="entercompont">
                 <EnterCompony data={CategoryDATA} />
+            </div>
+            <div className="weclient">
+                <Container>
+                    <WeclientHomePage mode="client" />
+                    <WeclientHomePage mode="karta" />
+                </Container>
             </div>
         </div>
     )

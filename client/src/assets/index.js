@@ -11,6 +11,7 @@ import CategBlock2PNG from './png/Gig Image 2.png'
 import ClientMapPNG from './png/Rectangle 21.png'
 import AvatarMapPNG from './png/Ellipse 7.png'
 import GroupMapPNG from './png/Group 932.png'
+import VideoPNG from './png/video.png'
 
 export {
     LogoSVG,
@@ -21,5 +22,6 @@ export {
     CategBlock2PNG,
     ClientMapPNG,
     AvatarMapPNG,
+    VideoPNG,
     GroupMapPNG
 }

@@ -1,4 +1,4 @@
-import { TagsElement } from '../../../../components'
+import { TagsElement } from '../../../../../components'
 import "./style.scss"
 const FaneraItem = ({ item }) => {
     return (

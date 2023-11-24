@@ -3,7 +3,7 @@ import { Button, TagsElement } from "../../../../components"
 import { BiSolidChevronRight } from "react-icons/bi";
 import { Intercompony } from "../../../../assets"
 import "./style.scss"
-const EnterCompony = ({ data }) => {
+export const EnterCompony = ({ data }) => {
 
     return (
         <>
@@ -55,4 +55,3 @@ const EnterCompony = ({ data }) => {
     )
 }
 
-export default EnterCompony

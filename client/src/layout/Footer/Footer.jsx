@@ -6,6 +6,7 @@ import { Button } from '../../components/Button'
 const Footer = () => {
     return (
         <div className="footer">
+            
             <Container>
                 <Row>
                     <Col md="3">

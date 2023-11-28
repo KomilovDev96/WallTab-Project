@@ -7,7 +7,14 @@ import { BiShoppingBag } from "react-icons/bi";
 import { CiHeart } from "react-icons/ci";
 import { FaBars } from "react-icons/fa";
 import { LogoSVG } from '../../../assets'
+import { useState } from 'react';
 const NavigateTop = () => {
+    const [nav, setNav] = useState(false)
+    const showMenu = () => {
+        if (nav = true) {
+            
+        }
+    }
     return (
         <nav className="navigate">
             <div className="navigate_top">
@@ -109,9 +116,18 @@ const NavigateTop = () => {
                 <Container>
                     <div className='mainMenuMobile_flex'>
                         <div className='mainMenuMobile_bureger'>
-                            <button>
+                            <button onClick={() => setNav(!nav)}>
                                 <FaBars size={40} />
                             </button>
+                        </div>
+                        <div className="hiddenMenu" >
+                            <ul>
+                                <li>Home Page</li>
+                                <li>Home Page</li>
+                                <li>Home Page</li>
+                                <li>Home Page</li>
+                                <li>Home Page</li>
+                            </ul>
                         </div>
                         <div className='mainMenuMobile_logo'>
                             <div className='mainMenuMobile_logoGrid'>

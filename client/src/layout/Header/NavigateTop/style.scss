@@ -2,6 +2,7 @@
     &_top {
         background: var(--black);
         padding: 12px 0;
+
     }
 
     &_menuIcons {
@@ -47,7 +48,11 @@
 }
 
 .mainMenu {
-    padding: 20px 0 0px;
+    @media (max-width: 991px) {
+        display: none;
+    }
+
+    padding: 20px 0;
 
     &_flex {
         display: flex;
@@ -186,6 +191,82 @@
 
                     &:last-child {
                         padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainMenuMobile {
+    display: none;
+
+    @media (max-width: 991px) {
+        display: block;
+        padding: 20px 0;
+
+        &_flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &_bureger {
+            button {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        &_logoGrid {
+            display: flex;
+            align-items: center;
+
+            p {
+                color: var(--black, #1F1F1F);
+                font-size: 24px;
+                font-weight: 400;
+                text-transform: capitalize;
+                margin-left: 25px;
+            }
+        }
+        &_karzin{
+            ul{
+                display: flex;
+                li{
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid #ED553B;
+                    border-radius: 50%;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 5px;
+                    transition: 500ms;
+                    &:hover{
+                        background: #ED553B;
+                        svg{
+                            fill: white;
+                        }
+                    }
+                    svg{
+                        fill: #ED553B;
+                    }
+                    span{
+                        position: absolute;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: #F1F1F1;
+                        color: black;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        bottom: 0;
+                        right: 0;
+                        transform: translateX(5px) translateY(8px);
                     }
                 }
             }

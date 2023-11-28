@@ -2,6 +2,10 @@ import { NavigateBottomMENUDATA, NavigateBottomOFERDATA, NavigateBottomSVGDATA, 
 import './style.scss'
 import { Col, Container, Row } from 'styled-bootstrap-grid'
 import { AiOutlineSearch } from "react-icons/ai";
+import { BiShoppingBag } from "react-icons/bi";
+
+import { CiHeart } from "react-icons/ci";
+import { FaBars } from "react-icons/fa";
 import { LogoSVG } from '../../../assets'
 const NavigateTop = () => {
     return (
@@ -101,7 +105,37 @@ const NavigateTop = () => {
                     </ul>
                 </div>
             </div>
-
+            <div className="mainMenuMobile">
+                <Container>
+                    <div className='mainMenuMobile_flex'>
+                        <div className='mainMenuMobile_bureger'>
+                            <button>
+                                <FaBars size={40} />
+                            </button>
+                        </div>
+                        <div className='mainMenuMobile_logo'>
+                            <div className='mainMenuMobile_logoGrid'>
+                                <a href="#">
+                                    <img src={LogoSVG} alt="svg" />
+                                </a>
+                                <p>Magic Wood Maps</p>
+                            </div>
+                        </div>
+                        <div className='mainMenuMobile_karzin'>
+                            <ul>
+                                <li>
+                                    <BiShoppingBag size={35} />
+                                    <span>2</span>
+                                </li>
+                                <li>
+                                    <CiHeart size={35} />
+                                    <span>2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </Container>
+            </div>
         </nav>
     )
 }

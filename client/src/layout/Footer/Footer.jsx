@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="footer">
             
             <Container>
-                <Row>
-                    <Col md="3">
+                <Row className="footer_row">
+                    <Col lg="3" md="6" sm="12">
                         <div className='footer_wood'>
                             <h3 className='footer_wood_text'>"Magic Wood Map"</h3>
                             <form className='footer_wood_form'>
@@ -32,7 +32,7 @@ const Footer = () => {
                             <p className='footer_wood_end'>©2022, "Magic Wood Map"</p>
                         </div>
                     </Col>
-                    <Col md="3">
+                    <Col lg="3" md="6" sm="12">
                         <div className='footer_menu'>
                             <h4 className='footer_title'>Меню</h4>
                             <ul className='footer_menu_menu'>
@@ -46,7 +46,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </Col>
-                    <Col md="3">
+                    <Col lg="3" md="6" sm="12">
                         <div className='footer_contact'>
                             <h4 className='footer_title'>Контакты</h4>
                             <ul className='footer_contact_menu'>
@@ -63,7 +63,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </Col>
-                    <Col md="3">
+                    <Col lg="3" md="6" sm="12">
                         <div className='footer_page'>
                             <h4 className='footer_title'>Страницы</h4>
                             <ul className='footer_page_menu'>

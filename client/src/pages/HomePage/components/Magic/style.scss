@@ -5,4 +5,12 @@
 .magicHome{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @media (max-width: 991px) {
+        grid-template-columns: 1fr;
+    }
+    &_text{
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
+    }
 }

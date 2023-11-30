@@ -1,6 +1,8 @@
 .topcompony {
     background: linear-gradient(79deg, rgba(111, 58, 27, 0.07) -2.75%, rgba(255, 255, 255, 0.00) 101.74%);
-
+    @media (max-width: 991px) {
+        padding: 100px 0;
+    }
     &_text {
         display: flex;
         flex-direction: column;
@@ -13,6 +15,9 @@
 
         p {
             margin-bottom: 50px;
+        }
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
         }
     }
 
@@ -40,7 +45,10 @@
     display: grid;
     grid-template-columns: 1fr 606px 1fr;
     gap: 37px 44px;
-
+    @media (max-width: 991px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 20;
+    }
     &_item {
         position: relative;
         cursor: pointer;

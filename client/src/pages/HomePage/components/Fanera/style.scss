@@ -2,9 +2,11 @@
     padding: 150px 0;
 
     &_top {
+        @media (max-width: 991px) {
+            max-width: 100%;
+        }
         max-width: 481px;
         margin-bottom: 80px;
-
         h2 {
             color: #000;
             font-family: Montserrat;

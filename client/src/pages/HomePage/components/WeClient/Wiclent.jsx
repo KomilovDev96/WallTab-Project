@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
+// Import Swiper stylesgap: 37px 44px;
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -35,6 +35,14 @@ const WeclientHomePage = ({ mode }) => {
                             modules={[Pagination, Autoplay]}
                             className="clientSwiperHome"
                             loop={true}
+                            breakpoints={{
+                                320: {
+                                    slidesPerView: 1,
+                                },
+                                992: {
+                                    slidesPerView: 2,
+                                }
+                            }}
                         >
                             {ClientDATA.map((item, index) => (
                                 <SwiperSlide key={index}>
@@ -42,19 +50,22 @@ const WeclientHomePage = ({ mode }) => {
                                         <div className='clientCarousel_image'>
                                             <img src={item.img} alt="png" />
                                         </div>
-                                        <div className='clientCarousel_dec'>
-                                            <h4>{item.title}</h4>
-                                            <p>{item.text}</p>
-                                        </div>
-                                        <div className='clientCarousel_avatar avatarCaroul'>
-                                            <div className='avatarCaroul_image'>
-                                                <img src={item.avatarImage} alt="png" />
+                                        <div className='clientCarousel_grid'>
+                                            <div className='clientCarousel_dec'>
+                                                <h4>{item.title}</h4>
+                                                <p>{item.text}</p>
                                             </div>
-                                            <div className='avatarCaroul_dec'>
-                                                <div className='avatarCaroul_name'>{item.avatar}</div>
-                                                <div className='avatarCaroul_date'>{item.date}</div>
+                                            <div className='clientCarousel_avatar avatarCaroul'>
+                                                <div className='avatarCaroul_image'>
+                                                    <img src={item.avatarImage} alt="png" />
+                                                </div>
+                                                <div className='avatarCaroul_dec'>
+                                                    <div className='avatarCaroul_name'>{item.avatar}</div>
+                                                    <div className='avatarCaroul_date'>{item.date}</div>
+                                                </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </SwiperSlide>
                             ))}

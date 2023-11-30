@@ -10,7 +10,7 @@ export const EnterCompony = ({ data }) => {
             <div className="topcompony">
                 <Container>
                     <Row>
-                        <Col lg="6" style={{ display: "flex" }}>
+                        <Col lg={6} md={12} style={{ display: "flex" }}>
                             <div className="topcompony_text">
                                 <TagsElement tag="h2">
                                     Входим в топ компаний по продажам карт
@@ -28,7 +28,7 @@ export const EnterCompony = ({ data }) => {
                                 </div>
                             </div>
                         </Col>
-                        <Col lg="6">
+                        <Col lg={6} md={12}>
                             <div className="topcompony_image">
                                 <img src={Intercompony} alt="png" />
                             </div>

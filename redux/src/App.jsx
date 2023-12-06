@@ -4,12 +4,22 @@ import { useDispatch, useSelector } from 'react-redux'
 const App = () => {
   const dispatch = useDispatch()
   const cash = useSelector(state => state.cash.cash)
+  const customers = useSelector(state => state.customer.customer)
 
   const addCash = (cash) => {
     dispatch({ type: "ADD_CASH", payload: cash })
   }
   const getCash = (cash) => {
     dispatch({ type: "GET_CASH", payload: cash })
+  }
+
+  const addCustomer = (name) => {
+    console.log(name)
+    const cutomer = {
+      name,
+      id: Date.now()
+    }
+    dispatch({ type: "ADD_CUSTOMER", payload: cutomer })
   }
 
   return (
@@ -19,6 +29,31 @@ const App = () => {
 
       <button onClick={() => addCash(5)}> puldan toldirish</button>
       <button onClick={() => getCash(5)}> puldan ayirish</button>
+      <button onClick={() => addCustomer(prompt("Isim yozing"))}>Yangi foydalanuchini qo'shish</button>
+      <button onClick={() => getCash(5)}>o'chirish</button>
+
+      <div style={{
+        border: "1px solid red",
+        height: "600px",
+        width: "1000px",
+        margin: "50px auto"
+      }}>
+        {customers.length > 0
+          ?
+          <div>
+            {customers.map((item, index) => (
+              <div style={{ border: "1px solid red", height: "100px", width: "100px", }} key={index}>
+                <h4>{item.id}</h4>
+                <h2>{item.name}</h2>
+              </div>
+            ))}
+          </div>
+          :
+          <div>
+            Hech nima yo'q
+          </div>
+        }
+      </div>
     </>
   )
 }

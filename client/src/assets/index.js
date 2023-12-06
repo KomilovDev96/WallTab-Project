@@ -1,7 +1,7 @@
 // ======  SVG  ======
 import LogoSVG from './svg/logo.svg'
 import FaneraIcon1 from './svg/faneraIcon1.svg'
-
+import InterMapSVG from './svg/interMap.svg'
 
 //======  PNG   ======
 import HeaderPNG from './png/header.png'
@@ -16,6 +16,7 @@ import VideoPNG from './png/video.png'
 export {
     LogoSVG,
     HeaderPNG,
+    InterMapSVG,
     FaneraIcon1,
     Intercompony,
     CategBlock1PNG,

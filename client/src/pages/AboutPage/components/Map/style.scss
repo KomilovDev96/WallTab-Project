@@ -1,0 +1,28 @@
+.mapSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_fonts {
+        text-align: start;
+        h2 {
+            font-size: 60px;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 50px;
+        }
+
+        p {
+            width: 643px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.01em;
+
+        }
+    }
+    &_map {
+        width: 600px;
+        height: 400px;
+    }
+}

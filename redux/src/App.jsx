@@ -30,7 +30,7 @@ const App = () => {
       <button onClick={() => addCash(5)}> puldan toldirish</button>
       <button onClick={() => getCash(5)}> puldan ayirish</button>
       <button onClick={() => addCustomer(prompt("Isim yozing"))}>Yangi foydalanuchini qo'shish</button>
-      <button onClick={() => getCash(5)}>o'chirish</button>
+      <button onClick={() => removeCustomer()}>o'chirish</button>
 
       <div style={{
         border: "1px solid red",
@@ -45,6 +45,7 @@ const App = () => {
               <div style={{ border: "1px solid red", height: "100px", width: "100px", }} key={index}>
                 <h4>{item.id}</h4>
                 <h2>{item.name}</h2>
+                <button>Remove</button>
               </div>
             ))}
           </div>
